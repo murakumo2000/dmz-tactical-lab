@@ -1,0 +1,20 @@
+# Obsidian（端末ごとの設定）
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/
+.obsidian/graph.json
+.obsidian/canvas.json
+
+# ゴミ箱・OS
+.trash/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Officeの一時ロックファイル
+~$*
+
+# 非公開メモ（公開リポジトリに上げる場合は有効のまま）
+# プライベートリポジトリのみ使う場合は下2行を # でコメントアウト
+02_Private/*
+!02_Private/README.md

@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "20_マップ研究/アル・マズラ/POI/観測所周辺.md",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "30_戦術研究/高低差・岩場戦/岩場戦闘の基本原則.md",
+      "x": 500,
+      "y": 0,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "30_戦術研究/撤退・脱出/撤退判断の基本.md",
+      "x": 500,
+      "y": 320,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "50_ケーススタディ/失敗事例/高所を取られて撤退判断が遅れたケース.md",
+      "x": 1000,
+      "y": 160,
+      "width": 400,
+      "height": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n1",
+      "fromSide": "right",
+      "toNode": "n2",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n2",
+      "fromSide": "bottom",
+      "toNode": "n3",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "n4",
+      "toSide": "left"
+    }
+  ]
+}

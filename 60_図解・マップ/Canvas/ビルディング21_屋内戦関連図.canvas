@@ -1,0 +1,63 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "20_マップ研究/ビルディング21/ビルディング21の基本行動.md",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "20_マップ研究/ビルディング21/POI/立体迷路エリア.md",
+      "x": 500,
+      "y": 0,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "40_武器・装備研究/SMG/Vaznev-9K.md",
+      "x": 500,
+      "y": 320,
+      "width": 380,
+      "height": 260
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "30_戦術研究/建物戦/建物戦の基本原則.md",
+      "x": 1000,
+      "y": 160,
+      "width": 400,
+      "height": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n1",
+      "fromSide": "right",
+      "toNode": "n2",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n2",
+      "fromSide": "bottom",
+      "toNode": "n3",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "n4",
+      "toSide": "left"
+    }
+  ]
+}

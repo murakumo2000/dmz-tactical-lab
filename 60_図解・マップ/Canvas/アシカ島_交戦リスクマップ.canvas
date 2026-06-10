@@ -1,0 +1,79 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "20_マップ研究/アシカアイランド/アシカ島の基本行動.md",
+      "x": 0,
+      "y": 0,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "20_マップ研究/アシカアイランド/POI/灯台周辺.md",
+      "x": 500,
+      "y": 0,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "30_戦術研究/対多人数戦/対多人数戦の初動判断.md",
+      "x": 500,
+      "y": 320,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "50_ケーススタディ/成功事例/初動撤退で第三者漁夫の利を回避したケース.md",
+      "x": 1000,
+      "y": 80,
+      "width": 420,
+      "height": 240
+    },
+    {
+      "id": "n5",
+      "type": "file",
+      "file": "50_ケーススタディ/失敗事例/灯台登攀中に撃たれたケース.md",
+      "x": 1000,
+      "y": 360,
+      "width": 420,
+      "height": 240
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n1",
+      "fromSide": "right",
+      "toNode": "n2",
+      "toSide": "left"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n2",
+      "fromSide": "bottom",
+      "toNode": "n3",
+      "toSide": "top"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n3",
+      "fromSide": "right",
+      "toNode": "n4",
+      "toSide": "left"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "n5",
+      "toSide": "left"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "type": "file",
+      "file": "40_武器・装備研究/アサルトライフル/M4.md",
+      "x": 0,
+      "y": 0,
+      "width": 380,
+      "height": 260
+    },
+    {
+      "id": "n2",
+      "type": "file",
+      "file": "40_武器・装備研究/アサルトライフル/TAQ-56.md",
+      "x": 0,
+      "y": 320,
+      "width": 380,
+      "height": 260
+    },
+    {
+      "id": "n3",
+      "type": "file",
+      "file": "30_戦術研究/高低差・岩場戦/岩場戦闘の基本原則.md",
+      "x": 500,
+      "y": 0,
+      "width": 400,
+      "height": 260
+    },
+    {
+      "id": "n4",
+      "type": "file",
+      "file": "30_戦術研究/建物戦/建物戦の基本原則.md",
+      "x": 500,
+      "y": 320,
+      "width": 400,
+      "height": 260
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "fromNode": "n1",
+      "fromSide": "right",
+      "toNode": "n3",
+      "toSide": "left",
+      "label": "近中距離・機動"
+    },
+    {
+      "id": "e2",
+      "fromNode": "n2",
+      "fromSide": "right",
+      "toNode": "n3",
+      "toSide": "left",
+      "label": "中距離・安定"
+    },
+    {
+      "id": "e3",
+      "fromNode": "n1",
+      "fromSide": "bottom",
+      "toNode": "n2",
+      "toSide": "top"
+    },
+    {
+      "id": "e4",
+      "fromNode": "n1",
+      "fromSide": "right",
+      "toNode": "n4",
+      "toSide": "left",
+      "label": "CQB寄り"
+    }
+  ]
+}
