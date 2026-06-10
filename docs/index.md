@@ -23,4 +23,4 @@ COD DMZの戦術・武器・マップ研究ナレッジベース（公開版）
 
 - 原本: Obsidian Vault（ローカル）
 - 公開元: `80_Public` フォルダ
-- セットアップ: Vault内 `セットアップ手順.md`
+- リポジトリ: [github.com/murakumo2000/dmz-tactical-lab](https://github.com/murakumo2000/dmz-tactical-lab)
