@@ -119,10 +119,18 @@
 - `GITHUB_DESKTOP手順.md` 追加
 - `.gitignore` 更新（02_Private、Officeロック、Obsidian workspace）
 
+### GitHub Pages・フォルダ整理
+
+- `.github/workflows/pages.yml` 追加（Actions 自動デプロイ）
+- `docs/_config.yml` 追加
+- `GITHUB_PAGES手順.md` 追加
+- 空の `dmz-tactical-lab/` フォルダを削除（旧リポジトリ置き場）
+
 ### ユーザー対応が必要な項目
 
+- **GitHub Desktop で Push**（Pages ワークフロー含む）
+- **GitHub Settings → Pages → Source: GitHub Actions**（`GITHUB_PAGES手順.md`）
 - Obsidian + Dataview インストール
-- **GitHub Desktop でリポジトリ作成・初回 Push**（`GITHUB_DESKTOP手順.md`）
 - コシチェイの実プレイ検証
 - 画像素材追加
 
