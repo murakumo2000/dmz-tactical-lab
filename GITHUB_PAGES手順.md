@@ -1,48 +1,74 @@
-# GitHub Pages セットアップ手順
+# GitHub Pages セットアップ手順（パターンA: 公開リポジトリ）
 
-公開URL（設定完了後）:
+採用方針: **リポジトリを Public にし、GitHub Pages で公開する**
+
+公開URL:
 
 ```
 https://murakumo2000.github.io/dmz-tactical-lab/
 ```
 
-## 手順1: 変更を Push する
+## 公開範囲の整理
 
-GitHub Desktop で次が含まれることを確認して Push:
+| 場所 | 誰が見られるか | 内容 |
+|---|---|---|
+| GitHub リポジトリ | インターネット上の誰でも | コミット済みの全ファイル（下書き・ケース含む） |
+| Pages サイト（上記URL） | インターネット上の誰でも | **`docs/` の公開記事のみ** |
+| `02_Private/` | ローカルのみ | `.gitignore` で GitHub に上がらない |
 
-- `.github/workflows/pages.yml`
-- `docs/_config.yml`
+---
 
-## 手順2: GitHub で Pages を有効化
+## 手順1: 最新を Push（済んでいればスキップ）
 
-1. ブラウザでリポジトリを開く  
-   `https://github.com/murakumo2000/dmz-tactical-lab`
-2. **Settings** → **Pages**
-3. **Build and deployment** の **Source** を **GitHub Actions** に変更
+GitHub Desktop で **Push origin**
 
-> 初回 Push 後、Actions タブに `Deploy GitHub Pages` ワークフローが表示されます。
+---
 
-## 手順3: デプロイ確認
+## 手順2: リポジトリを Public にする
 
-1. **Actions** タブ → 最新のワークフローが緑（成功）か確認
-2. **Settings** → **Pages** に表示される URL を開く
-3. トップページに戦術・マップの記事一覧が表示されればOK
+1. ブラウザで開く:  
+   https://github.com/murakumo2000/dmz-tactical-lab/settings
+2. ページ最下部 **Danger Zone**
+3. **Change repository visibility** → **Change visibility**
+4. **Make public** を選択し、リポジトリ名を入力して確認
 
-## 公開記事の更新フロー
+---
+
+## 手順3: Pages を有効化
+
+1. 同じ Settings → 左メニュー **Pages**
+2. **Build and deployment** → **Source**: **GitHub Actions**
+3. **Actions** タブを開く  
+   https://github.com/murakumo2000/dmz-tactical-lab/actions
+4. **Deploy GitHub Pages** が緑（成功）になるまで待つ（初回は数分）
+
+> ワークフローが走らない場合: Actions タブで **Deploy GitHub Pages** → **Run workflow** を手動実行
+
+---
+
+## 手順4: 公開サイトを確認
+
+`https://murakumo2000.github.io/dmz-tactical-lab/`
+
+戦術・マップの記事一覧が表示されれば完了。
+
+---
+
+## 日常の更新フロー
 
 ```text
-80_Public に記事を追加・更新
+Obsidian で記事編集
     ↓
-docs/ 配下に同期（tactics / maps など）
+公開する記事は 80_Public に配置
+    ↓
+docs/ に同期（tactics / maps など）
     ↓
 GitHub Desktop でコミット・Push
     ↓
-Actions が自動デプロイ（数分）
+Actions が自動デプロイ（数分後にサイト反映）
 ```
 
-## 代替: ブランチ公開（Actions を使わない場合）
+## 個人メモの扱い
 
-Settings → Pages → Source: **Deploy from a branch**  
-Branch: `main` / Folder: **`/docs`**
-
-この場合は `docs/_config.yml` で Jekyll ビルドされます。
+- フレンド名・個人ログ → **`02_Private/`** にのみ書く（Git に上がらない）
+- 公開したくない下書き → `status: draft` のまま **`docs/` にコピーしない**

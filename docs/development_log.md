@@ -129,7 +129,8 @@
 ### ユーザー対応が必要な項目
 
 - **GitHub Desktop で Push**（Pages ワークフロー含む）
-- **GitHub Settings → Pages → Source: GitHub Actions**（`GITHUB_PAGES手順.md`）
+- **採用方針: パターンA**（Public リポジトリ + GitHub Pages）
+- ユーザー作業: Public 化 → Settings → Pages → GitHub Actions
 - Obsidian + Dataview インストール
 - コシチェイの実プレイ検証
 - 画像素材追加
