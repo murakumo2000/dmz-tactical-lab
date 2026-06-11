@@ -130,6 +130,7 @@
 
 - **GitHub Desktop で Push**（Pages ワークフロー含む）
 - **採用方針: パターンA**（Public リポジトリ + GitHub Pages）
+- Pages サイトタイトルを `DMZ戦術研究所` に明示固定
 - ユーザー作業: Public 化 → Settings → Pages → GitHub Actions
 - Obsidian + Dataview インストール
 - コシチェイの実プレイ検証
