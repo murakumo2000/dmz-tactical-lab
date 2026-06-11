@@ -1,5 +1,6 @@
-title: DMZ戦術研究所
-description: COD DMZ 戦術・武器・マップ研究ナレッジベース
+title: "DMZ戦術研究所"
+name: "DMZ戦術研究所"
+description: "COD DMZ 戦術・武器・マップ研究ナレッジベース"
 theme: jekyll-theme-minimal
 markdown: kramdown
 plugins:
