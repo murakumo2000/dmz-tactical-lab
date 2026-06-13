@@ -2,10 +2,15 @@ title: "DMZ戦術研究所"
 name: "DMZ戦術研究所"
 description: "COD DMZ 戦術・武器・マップ研究ナレッジベース"
 lang: ja
+url: "https://murakumo2000.github.io"
+baseurl: "/dmz-tactical-lab"
 theme: jekyll-theme-minimal
 markdown: kramdown
+
 plugins:
   - jekyll-relative-links
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 relative_links:
   enabled: true

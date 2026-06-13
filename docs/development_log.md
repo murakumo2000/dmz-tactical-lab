@@ -132,6 +132,20 @@
 - **採用方針: パターンA**（Public リポジトリ + GitHub Pages）
 - Pages サイトタイトルを `DMZ戦術研究所` に明示固定
 - Chrome 自動翻訳で「戦術」→「運動」になる問題: `lang: ja` と `notranslate` を追加
+
+### サイト改善 v1.0（2026-06-10）
+
+設計: `DMZ戦術研究所_サイト改善設計_v1.0.zip`
+
+- 内部パス除去（`Vault内` 表記削除）
+- Jekyll カスタム layout（status/confidence/updated/map/mode 表示）
+- `jekyll-seo-tag` / `jekyll-sitemap` 追加、`url` / `baseurl` 設定
+- 全公開記事に `description` / `layout: default` 追加
+- トップページ改善（説明・使い方・おすすめ・信頼度説明）
+- 戦術一覧・マップ一覧ページ追加
+- 記事末尾に関連記事・一覧へ戻るリンク
+- `Templates/公開記事テンプレート.md` / `80_Public/公開前チェックリスト.md` 追加
+- `80_Public` と `docs/` を同期
 - ユーザー作業: Public 化 → Settings → Pages → GitHub Actions
 - Obsidian + Dataview インストール
 - コシチェイの実プレイ検証
